@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/*Print a string*/
+/**
+* main - this is my main function
+* description - Print a string
+* return - return 0 successful
+*/
 
 int main(void)
 {
