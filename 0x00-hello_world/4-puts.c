@@ -2,8 +2,8 @@
 
 /**
 * main - this is my main function
-* description - Print a string
-* return - return 0 successful
+* Description : print string using puts
+* Return : return 0 successful
 */
 
 int main(void)
