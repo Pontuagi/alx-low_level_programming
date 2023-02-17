@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- * main - the main function of the program
+/**
+ * main - the main function
  * Description: print alphabet in lowercase and uppercase
  * Return: return 0
  */
@@ -17,7 +17,7 @@ int main(void)
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		putchar(ch);
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
