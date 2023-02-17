@@ -1,2 +1,3 @@
 ALX low level programming 
-c
+-Hello world
+-variables if, else, while
