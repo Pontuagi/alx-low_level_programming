@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(no);
 		putchar(',');
-		putchat(' ');
+		putchar(' ');
 	}
 	return (0);
 }
