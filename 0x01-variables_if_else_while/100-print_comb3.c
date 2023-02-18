@@ -17,13 +17,11 @@ int main(void)
 		{
 			if (10 * i + j < 10 * j + i)
 			{
-				if (10 * i + j != 89)
-				{
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(',');
 				putchar(' ');
-				}
+			
 			}
 		}
 	}
