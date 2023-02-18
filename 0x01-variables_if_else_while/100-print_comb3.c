@@ -19,9 +19,11 @@ int main(void)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
+				if (10 * i + j != 89)
+				{
 				putchar(',');
 				putchar(' ');
-			
+				}
 			}
 		}
 	}
