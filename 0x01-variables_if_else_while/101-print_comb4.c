@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (k = 0; k < 10 ; k++)
 			{
-				if (100 * i + 10 * J + k < 100 * k + 10 * i + j && 100 * j + 10 * i + k)
+				if (100 * i + 10 * j + k < 100 * k + 10 * i + j && 100 * j + 10 * i + k)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
