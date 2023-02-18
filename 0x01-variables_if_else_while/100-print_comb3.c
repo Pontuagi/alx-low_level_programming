@@ -19,8 +19,8 @@ int main(void)
 			{
 				if (10 * i + j != 89)
 				{
-				putchar(i);
-				putchar(j);
+				putchar(i + '0');
+				putchar(j + '0');
 				putchar(',');
 				putchar(' ');
 				}
