@@ -16,12 +16,12 @@ int main(void)
 		{
 			for (k = 0; k < 10 ; k++)
 			{
-				if (100 * i + 10 * j + k < (100 * j + 10 * k + i && 100 * k + 10 * i + j))
+				if (!(k == j || j == i || j > k || i > j))
 				{
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(k + '0');
-					if (100 * i + 10 * j + k != 789)
+					if (!(k == 9 || j == 8 || i == 7))
 					{
 					putchar(',');
 					putchar(' ');
