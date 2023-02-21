@@ -3,11 +3,16 @@
 
 /**
   * _islower - function to check if a letter is lowercase
-  *Return: return 1 if c is lowercase otherwise 0
+  * @c: Check if c is lowercase or not
+  *
+  * Return: return 1 if c is lowercase otherwise 0
   */
 
 int _islower(int c)
 {
-	int i = islower(c);
+	if (islower(c))
+		int i = 1;
+	else
+		i = 0;
 	return (i);
 }
