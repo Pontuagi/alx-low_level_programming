@@ -10,7 +10,7 @@ int _isalpha(int c)
 {
 	int j;
 
-	if (isalpha())
+	if (isalpha(c))
 		j = 1;
 	else
 		j = 0;
