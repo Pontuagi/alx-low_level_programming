@@ -10,8 +10,10 @@
 
 int _islower(int c)
 {
+	int i;
+
 	if (islower(c))
-		int i = 1;
+		i = 1;
 	else
 		i = 0;
 	return (i);
