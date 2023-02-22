@@ -13,7 +13,10 @@ int print_last_digit(int j)
 	int lstdgt = abs(j) % 10;
 
 	if (j == INT_MIN)
+	{
 		_putchar('0' - lstdgt);
+		lstdgt = -lstdgt;
+	}
 	else
 		_putchar(lstdgt + '0');
 	return (lstdgt);
