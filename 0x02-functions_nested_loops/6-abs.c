@@ -4,12 +4,12 @@
 /**
   * _abs - entry to our function
   * Return: 1 or 0
-  * @int: value to check absolute value of
+  * @a: value to check absolute value of
   */
 
-int _abs(int)
+int _abs(int a)
 {
-	int j = abs;
+	int j = abs(a);
 
 	return (j);
 }
