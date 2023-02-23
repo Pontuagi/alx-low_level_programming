@@ -10,13 +10,13 @@
 
 int _isupper(int c)
 {
-	if (c isupper)
+	if (isupper(c))
 	{
-		putchar(1 + '0');
+		_putchar(1 + '0');
 	}
 	else
 	{
-		putchar(0 + '0');
+		_putchar(0 + '0');
 	}
 	return (0);
 }
