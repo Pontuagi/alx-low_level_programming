@@ -22,7 +22,7 @@ int largest_number(int a, int b, int c)
 	}
 	if (c >= a && c >= b)
 	{
-		largest = c
+		largest = c;
 	}
 	return (largest);
 }
