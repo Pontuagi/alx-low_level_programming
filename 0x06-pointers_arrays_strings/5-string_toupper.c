@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
   * string_toupper - convert all small letters to uppercase.
@@ -8,12 +9,8 @@
 
 char *string_toupper(char *s)
 {
-	int i = 0;
+	char t;
 
-	for (; i != '\0'; i++)
-	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-			s[i] = s[i] - 32;
-	}
-	return (s);
+	t = toupper(s);
+	return (t);
 }
