@@ -17,7 +17,7 @@ char *leet(char *s)
 	replace_char(s, 'O', '0');
 	replace_char(s, 'o', '0');
 	replace_char(s, 'T', '7');
-	replace_char(s, 't', '4');
+	replace_char(s, 't', '7');
 	replace_char(s, 'L', '1');
 	replace_char(s, 'l', '1');
 	printf("\n");
