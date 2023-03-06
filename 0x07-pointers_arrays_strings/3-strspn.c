@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-  * strspn - get length of a prefix substring
+  * _strspn - get length of a prefix substring
   * @s: string
   * @accept: bytes to check from
   * Return: length n

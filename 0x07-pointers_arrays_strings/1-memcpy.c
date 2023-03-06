@@ -2,9 +2,10 @@
 #include <string.h>
 
 /**
-  * memcpy - copies memory area
+  * _memcpy - copies memory area
   * @src: source memory area
   * @dest: destination memory area
+  * @n: number of bytes
   * Return: dest
   */
 
