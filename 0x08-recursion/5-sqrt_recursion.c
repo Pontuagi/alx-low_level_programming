@@ -19,12 +19,12 @@ int _sqrt_recursion(int n)
 		else if (x * x < n)
 		{
 			x++;
-			_sqrt_recursion(n);
+			return (_sqrt_recursion(n));
 		}
 		else
 		{
 			x--;
-			_sqrt_recursion(n);
+			return (_sqrt_recursion(n));
 		}
 	}
 	return x;
