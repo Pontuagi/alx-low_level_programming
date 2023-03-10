@@ -10,11 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int m = atoi(argv[1]);
-	int n = 0;
-
 	if (argc == 2)
 	{
+		int m = atoi(argv[1]);
+		int n = 0;
+
 		if (m / 25 > 0)
 		{
 			n = n + (m / 25);
