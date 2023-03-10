@@ -16,9 +16,10 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if ((atoi(argv[i]) % 10) > 0 && (atoi(argv[i]) % 10) < 10)
+		if ((atoi(argv[i]) % 10) >= 0 && (atoi(argv[i]) % 10) <= 9 &&
+				atoi(argv[i]) > 0)
 		{
-		sum = sum + atoi(argv[i]);
+			sum = sum + atoi(argv[i]);
 		}
 		else
 		{
