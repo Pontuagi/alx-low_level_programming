@@ -39,7 +39,10 @@ int main(int argc, char *argv[])
 		{
 			printf("0\n");
 		}
-		printf("%d\n", n);
+		else
+		{
+			printf("%d\n", n);
+		}
 	}
 	if (argc != 2)
 	{
