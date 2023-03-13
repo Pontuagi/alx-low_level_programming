@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
   * create_array - create an array of chars
@@ -18,6 +19,9 @@ char *create_array(unsigned int size, char c)
 	be = malloc(size * sizeof(char));
 	for (; i < size; i++)
 		be[i] = c;
+
+	if (be == NULL)
+		printf("failed to allocate %d bytes", size);
 
 	if (size == 0)
 	{
