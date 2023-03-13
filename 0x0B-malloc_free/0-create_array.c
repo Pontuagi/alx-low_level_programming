@@ -22,7 +22,6 @@ char *create_array(unsigned int size, char c)
 
 	if (be == NULL)
 	{
-		printf("failed to allocate %d bytes", size);
 		return (NULL);
 	}
 
