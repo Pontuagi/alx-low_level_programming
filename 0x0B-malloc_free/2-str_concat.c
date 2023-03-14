@@ -23,8 +23,8 @@ char *str_concat(char *s1, char *s2)
 		ps = strcat(ps, s2);
 	}
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	return (ps);
 }
