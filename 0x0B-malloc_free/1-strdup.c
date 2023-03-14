@@ -19,5 +19,8 @@ char *_strdup(char *str)
 	if (bs != NULL)
 		strcpy(bs, str);
 
+	if (str == NULL)
+		return (NULL);
+
 	return (bs);
 }
