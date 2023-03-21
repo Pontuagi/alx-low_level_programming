@@ -23,10 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= s2len)
 		n = s2len;
 	st = malloc(sizeof(char) * (s1len + n + 1));
-	if (st != NULL)
-	{
+
+	if (st == NULL)
+		return (NULL);
+	if (s1 != NULL)
 		strcpy(st, s1);
-		strncat(st, s2, n);
-	}
+	strncat(st, s2, n);
 	return (st);
 }
