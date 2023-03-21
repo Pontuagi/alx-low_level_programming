@@ -2,6 +2,7 @@
 #define _DOG_H_
 
 struct dog;
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
@@ -12,11 +13,11 @@ void print_dog(struct dog *d);
   * @owner: third element
   */
 
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog;
+};
 
 #endif /* ifndef _DOG_H_ */
