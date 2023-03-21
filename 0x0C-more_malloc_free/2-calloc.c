@@ -11,12 +11,16 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *p;
+	unsigned int p;
+	char *sc;
 
-	p = calloc(nmemb, sizeof(int));
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	if (p == NULL)
+	sc = malloc(nmemb * size);
+	if (sc == NULL)
 		return (NULL);
-	return (p);
+	for (p = 0; p < (nmemb * size); p++)
+		sc[p] = 0;
+
+	return (sc);
 }
