@@ -15,12 +15,12 @@ char *_strdup(char *str)
 	char *bs;
 	int n = strlen(str);
 
-	bs = malloc(sizeof(char) * (n + 1));
-	if (bs != NULL)
-		strcpy(bs, str);
-
 	if (str == NULL)
 		return (NULL);
 
+	bs = malloc(sizeof(char) * (n + 1));
+	if (bs == NULL)
+		return (NULL);
+	strcpy(bs, str);
 	return (bs);
 }
