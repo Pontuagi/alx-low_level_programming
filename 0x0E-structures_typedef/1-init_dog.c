@@ -1,6 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 /**
   * init_dog - initialize dog
   * @d: initialize dog
@@ -11,10 +13,9 @@
   * Return: d
   */
 
+struct dog;
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog d ;
-
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
