@@ -15,8 +15,6 @@ void print_all(const char * const format, ...)
 	va_start(pnt, format);
 	i = 0;
 
-	if (format[i])
-	{
 	while (format[i])
 	{
 		switch (format[i])
@@ -47,6 +45,8 @@ void print_all(const char * const format, ...)
 					char *st = va_arg(pnt, char *);
 
 					printf("%s", st);
+					if (st == NULL)
+						printf("nil");
 					break;
 				}
 			default:
@@ -57,7 +57,6 @@ void print_all(const char * const format, ...)
 					's'))
 			printf(", ");
 		i++;
-	}
 	}
 	printf("\n");
 
