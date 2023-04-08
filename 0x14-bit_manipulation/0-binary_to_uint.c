@@ -10,12 +10,12 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int val = 0;
-	int j = 0, power = 0;
-	int len = strlen(b);
+	int j, power = 0, len;
 
 	if (b == NULL)
 		return (0);
 
+	len = strlen(b);
 	for (j = len - 1; j >= 0; j--)
 	{
 		if (b[j] == '1')
