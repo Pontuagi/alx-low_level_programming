@@ -27,6 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (no_of_bytes <= 0)
 	{
 		fclose(file);
+		free(buffer0);
 		return (0);
 	}
 
@@ -35,7 +36,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fclose(file);
 
 	if (bytes_written != no_of_bytes)
+	{
 		return (0);
+		free(buffer0);
+		return (0);
+	}
 
+	free(buffer0);
 	return (bytes_written);
 }
