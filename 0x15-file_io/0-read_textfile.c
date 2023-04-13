@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
   * read_textfile - read a textfile and print it to the POSIX stdout
@@ -11,41 +10,41 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file;
-	char *buffer0;
-	ssize_t no_of_bytes, bytes_written;
+	FILE *fp;
+	int readx, writex;
+	char *buffer;
 
 	if (filename == NULL)
-		return (0);
-	file = fopen(filename, "r");
-	if (file == NULL)
-		return (0);
-
-	buffer0 = (char *)malloc(sizeof(char) * (letters + 1));
-	no_of_bytes = fread(buffer0, sizeof(char), letters, file);
-
-	if (no_of_bytes == -1)
 	{
-		fclose(file);
-		free(buffer0);
 		return (0);
 	}
-
-	buffer0[no_of_bytes] = '\0';
-	bytes_written = fwrite(buffer0, sizeof(char), no_of_bytes, stdout);
-
-	if (bytes_written == -1)
+	fp = fopen(filename, "r");
+	if (fp == NULL)
 	{
-		free(buffer0);
 		return (0);
 	}
-	if (bytes_written != no_of_bytes)
+	buffer = malloc(letters + 1);
+	if (buffer == NULL)
 	{
-		free(buffer0);
+		fclose(fp);
 		return (0);
 	}
+	readx = fread(buffer, 1, letters, fp);
+	if (readx == -1)
+	{
+		free(buffer);
+		fclose(fp);
+		return (0);
+	}
+	writex = write(STDOUT_FILENO, buffer, readx);
+	if (writex == -1)
+	{
+		free(buffer);
+		fclose(fp);
+		return (0);
+	}
+	free(buffer);
+	fclose(fp);
 
-	fclose(file);
-	free(buffer0);
-	return (bytes_written);
+	return (readx);
 }
