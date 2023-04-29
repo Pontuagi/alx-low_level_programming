@@ -13,7 +13,8 @@ void print_error(char *text, char *name, int number)
 {
 	if (name == NULL)
 		dprintf(STDERR_FILENO, "%s\n", text);
-	dprintf(STDERR_FILENO, "%s%s\n", text, name);
+	else
+		dprintf(STDERR_FILENO, "%s %s\n", text, name);
 	exit(number);
 }
 
