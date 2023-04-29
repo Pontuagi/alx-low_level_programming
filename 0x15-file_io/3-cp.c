@@ -42,9 +42,6 @@ int main(int files, char *v[])
 	if (fa_from == -1)
 		print_error("Error: Can't read from file", v[1], 98);
 
-	if (buffer == NULL)
-		return (-1);
-
 	/* open fa_to */
 	fb_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR |
 			S_IRGRP | S_IWGRP | S_IROTH);
@@ -54,7 +51,7 @@ int main(int files, char *v[])
 	/* read from file fa_from and write to file fb_to */
 	while ((fa_read = read(fa_from, buffer, BUFFER_SIZE)) > 0)
 	{
-		fb_write = write(fb_to, buffer, BUFFER_SIZE);
+		fb_write = write(fb_to, buffer, fa_read);
 		if (fb_write == -1)
 			print_error("Error: Can't write to", v[2], 99);
 	}
