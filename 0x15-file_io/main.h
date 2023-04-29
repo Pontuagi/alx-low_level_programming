@@ -10,6 +10,15 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <elf.h>
+
+#define BUF_SIZE 64
+#define ELF_MAGIC "\x7F\x45\x4C\x46"
+#define MAGIC_LEN 4
+
+void _putchar(char c);
+void print_error_elf(char *msg);
+void read_elf(int fd, unsigned char *buf);
 
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
