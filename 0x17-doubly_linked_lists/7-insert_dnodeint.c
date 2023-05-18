@@ -10,37 +10,39 @@
   */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *current, *temp, *new_node;
-	size_t count = 0;
+	dlistint_t *current, *new_node;
+	unsigned int count = 0;
 
-	new_node = malloc(sizeof(dlistint_t));
-	new_node->n = n;
-	if (*h == NULL)
-	{
-		if (idx == 0)
-		{
-			new_node->next = NULL;
-			new_node->prev = NULL;
-			*h = new_node;
-			return (new_node);
-		}
-		free(new_node);
+	if (h == NULL)
 		return (NULL);
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
+		return (NULL);
+	new_node->n = n;
+	new_node->next = NULL;
+	new_node->prev = NULL;
+	if (idx == 0)
+	{
+		if (*h != NULL)
+			(*h)->prev = new_node;
+		new_node->next = *h;
+		*h = new_node;
+		return (new_node);
 	}
 	current = *h;
-	while (current != NULL && count != idx)
+	while (current != NULL && count < idx)
 	{
 		current = current->next;
 		count++;
 	}
-	if (current == NULL)
+	if (count != idx)
 	{
 		free(new_node);
 		return (NULL);
 	}
-	temp = current->prev;
-	temp->next = new_node;
-	new_node->prev = temp;
+	if (current != NULL)
+		current->prev->next = new_node;
+	new_node->prev = current->prev;
 	new_node->next = current;
 	current->prev = new_node;
 
