@@ -1,0 +1,13 @@
+# make file with the variables CC and SRC
+# Rules all
+
+CC = gcc
+SRC = main.c school.c
+
+all: school
+
+school: $(SRC)
+	$(CC) -o school $(SRC)
+
+clean: 
+	rm -f school
