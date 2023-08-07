@@ -1,6 +1,7 @@
 ﻿0x1C-makefiles
 
 Learning Objectives:
+
     • What are make, Makefiles
     • When, why and how to use Makefiles
     • What are rules and how to set and use them
@@ -9,8 +10,11 @@ Learning Objectives:
     • What are variables and how to set and use them
 
 Files in the directory are:
+
     • 0-Makefile - Create your first Makefile.
+
     • 2-Makefile - Create your first useful Makefile.
+
       Requirements:
         ◦ name of the executable: school
         ◦ rules: all
@@ -22,7 +26,9 @@ Files in the directory are:
         ◦ NAME: the name of the executable
         ◦ The all rule should recompile only the updated source files
         ◦ You are not allowed to have a list of all the .o files
+
     • 3-Makefile:
+
       Requirements:
         ◦ name of the executable: school
         ◦ rules: all, clean, oclean, fclean, re
@@ -40,7 +46,9 @@ Files in the directory are:
         ◦ The all rule should recompile only the updated source files
         ◦ The clean, oclean, fclean, re rules should never fail
         ◦ You are not allowed to have a list of all the .o files
+
     • 4-Makefile:
+
       Requirements:
         ◦ name of the executable: school
         ◦ rules: all, clean, fclean, oclean, re
@@ -60,7 +68,7 @@ Files in the directory are:
         ◦ The clean, oclean, fclean, re rules should never fail
         ◦ 
         ◦ You are not allowed to have a list of all the .o files
-        ◦ 
+        
     • 5-island_perimeter.py: Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid:
         ◦ grid is a list of list of integers:
         ◦ 0 represents a water zone
@@ -75,8 +83,11 @@ Files in the directory are:
         ◦ First line contains #!/usr/bin/python3
         ◦ You are not allowed to import any module
         ◦ Module and function must be documented
+
     • 100-Makefile:
+
       Requirements:
+
         ◦ name of the executable: school
         ◦ rules: all, clean, fclean, oclean, re
         ◦ all: builds your executable

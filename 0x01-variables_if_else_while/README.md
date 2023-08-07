@@ -1,5 +1,7 @@
 ﻿Variables if else while
+
 Learning Objectives:
+
     • What are the arithmetic operators and how to use them
     • What are the logical operators (sometimes called boolean operators) and how to use them
     • What the the relational operators and how to use them
@@ -17,6 +19,7 @@ Learning Objectives:
     • What are the purpose of the gcc flags -m32 and -m64
 
 Files in the directory are:
+
     • 0-positive or negative determines if a number is positive or negative.
     • 1-last digit will print a string
     • 2-print alphabet will print the lower case alphabet followed by a newline

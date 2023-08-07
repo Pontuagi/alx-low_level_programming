@@ -1,5 +1,8 @@
-﻿ALX - low level programming 
+﻿
+ALX - low level programming 
+
 This repository contains all the directories of C programming (low level programming) projects. The various directories include:
+
     • 0x00-hello_world
     • 0x01-variables_if_else_while
     • 0x02-functions_nested_loops

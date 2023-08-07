@@ -1,5 +1,7 @@
 ﻿0x02-functions_nested_loops
+
 Learning Objectives:
+
     • What are nested loops and how to use them
     • What is a function and how do you use functions
     • What is the difference between a declaration and a definition of a function
@@ -9,6 +11,7 @@ Learning Objectives:
     • What are header files and how to to use them with #include
 
 Files in this directory include:
+
     • 0-putchar.c -  a program that prints _putchar, followed by a new line
     • 1-alphabet.c - a function that prints the alphabet in lowercase
     • 2-print_alphabet_x10.c - a function that prints 10 times the alphabet in lowercase

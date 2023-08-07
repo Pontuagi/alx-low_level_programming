@@ -1,6 +1,7 @@
 ﻿0x05. C - Pointers, arrays and strings
 
 Learning Objectives:
+
     • What are pointers and how to use them
     • What are arrays and how to use them
     • What are the differences between pointers and arrays
@@ -8,6 +9,7 @@ Learning Objectives:
     • Scope of variables
 
 Files:
+
     • 0-reset_to_98.c - takes a pointer to an int as parameter and updates the value it points to to 98.
     • 1-swap.c - is a function that swaps the values of two integers.
     • 2-strlen.c - is a function that returns the length of a string.

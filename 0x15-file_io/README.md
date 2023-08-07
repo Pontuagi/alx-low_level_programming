@@ -1,6 +1,7 @@
 ﻿0x15-file_io
 
 Learning Objectives:
+
     • Look for the right source of information online
     • How to create, open, close, read and write files
     • What are file descriptors
@@ -11,7 +12,9 @@ Learning Objectives:
     • What is a system call
     • What is the difference between a function and a system call
 
+
 Files:
+
     • 0-read_textfile.c:  a function that reads a text file and prints it to the POSIX standard output.
     • 1-create_file.c:  a function that creates a file.
     • 2-append_text_to_file.c:  a function that appends text at the end of a file.

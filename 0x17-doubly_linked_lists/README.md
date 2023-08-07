@@ -1,12 +1,14 @@
 ﻿0x17-doubly_linked_lists
 
 Learning Objectives:
+
     • What is a doubly linked list
     • How to use doubly linked lists
     • Start to look for the right source of information without too much help
 
 
 Files:
+
     • 0-print_dlistint.c - a function that prints all the elements of a dlistint_t list.
     • 1-dlistint_len.c - a function that returns the number of elements in a linked dlistint_t list.
     • 2-add_dnodeint.c - a function that adds a new node at the beginning of a dlistint_t list.

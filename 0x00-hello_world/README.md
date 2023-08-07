@@ -1,6 +1,7 @@
 ﻿C - Hello, World
 
 Learning Objectives:
+
     • Why C programming is awesome
     • Who invented C
     • Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
@@ -17,6 +18,7 @@ Learning Objectives:
 
 
 The various files contained in the directory include:
+
     • 0-preprocessor:a script that runs a file through the preprocessor and save the result in another file
     • 1-compiler: a script that compiles a c file bit does not link
     • 2-assembler: a script that generates the assembly code of a C code and save it in an output file.
