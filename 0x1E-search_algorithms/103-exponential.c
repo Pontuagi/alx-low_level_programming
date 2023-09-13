@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * exponential_binary_search - a function that searches for a value in a sorted array
- * of integers using the Exponential search algorithm
+ * exponential_binary_search - a function that searches for a value in a
+ *	sorted array of integers using the binary search algorithm
  * @array: the pointer to the first element of the array
  * @left: left sideor array
  * @right: right side of array
@@ -63,13 +63,13 @@ int exponential_search(int *array, size_t size, int value)
 
 	while (bound < size && array[bound] < value)
 	{
-		printf("Value checked array[%ld]: [%d]\n", bound, array[bound]);
+		printf("Value checked array[%ld] = [%d]\n", bound, array[bound]);
 		bound *= 2;
 	}
 
 	left = bound / 2;
 	right = (bound < size) ? bound : size - 1;
 
-    return (exponential_binary_search(array, left, right, value));
+	return (exponential_binary_search(array, left, right, value));
 }
 
