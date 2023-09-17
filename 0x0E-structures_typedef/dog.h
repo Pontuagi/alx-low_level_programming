@@ -20,12 +20,5 @@ typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
-/**
-  * struct dog - short structure
-  * @name: first element
-  * @age: second element
-  * @owner: third element
-  */
 
-
-#endif /* ifndef _DOG_H_ */
+#endif
